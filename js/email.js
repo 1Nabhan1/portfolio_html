@@ -35,11 +35,11 @@ document.getElementById("contact-form").addEventListener("submit", function (eve
     // Send email using EmailJS
     emailjs.send(serviceId, templateId, templateParams)
         .then(response => {
-            showSnackbar("Email sent successfully!", "success");
+            showSnackbar("We will connect you Shortly!", "success");
             document.getElementById("contact-form").reset(); // Reset form after success
         })
         .catch(error => {
-            showSnackbar("Failed to sent Email!", "error");
+            showSnackbar("Failed to sent Message!", "error");
             console.error("EmailJS error:", error);
         });
 });

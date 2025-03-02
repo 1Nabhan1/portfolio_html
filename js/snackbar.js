@@ -9,3 +9,7 @@ function showSnackbar(message, type) {
         snackbar.className = snackbar.className.replace("show", "");
     }, 3000);
 }
+document.getElementById("liveViewBtn").addEventListener("click", function (event) {
+    event.preventDefault(); // Prevents default anchor behavior
+    showSnackbar("This project is under development", "warning");
+});
