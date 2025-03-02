@@ -14,6 +14,9 @@
     <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
     <title>NbN</title>
 
+    <!-- CSS for Snackbar -->
+    <link rel="stylesheet" href="css/snackbar.css">
+
     <!--favicon icon-->
     <link rel="icon" href="images/favicon.png">
 
@@ -661,21 +664,24 @@
                     </div>
 
                     <div class="contact-form">
-                        <form action="#">
+                        <form id="contact-form">
                             <div class="input-group name animate-me">
                                 <label for="name">name *</label>
                                 <input type="text" name="name" id="name" placeholder="Your Name">
+
                             </div>
 
                             <div class="input-group email animate-me">
                                 <label for="email">email *</label>
                                 <input type="email" name="email" id="email" placeholder="Your Email">
+
                             </div>
 
                             <div class="input-group msg animate-me">
                                 <label for="message">message *</label>
                                 <textarea name="message" id="message" cols="30" rows="10"
                                     placeholder="Write your message"></textarea>
+
                             </div>
 
                             <div class="input-group submit animate-me">
@@ -686,7 +692,7 @@
                 </div>
             </div>
         </div>
-
+        <div id="snackbar"></div>
         <footer class="footer-section">
             <div class="container">
                 <div class="footer-content">
@@ -764,13 +770,19 @@
             </path>
         </svg>
     </div>
+
     <!-- =======================================
         ==End scroll top==  
     =======================================-->
+    <!-- Include EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
     <!-- jQuary library -->
     <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
     <script src="js/jquery-3.2.1.min.js"></script>
+
+    <!-- Snackbar -->
+    <script src="js/snackbar.js"></script>
 
     <!-- enllax parallux -->
     <script src="js/jquery.enllax.min.js"></script>
@@ -783,6 +795,10 @@
 
     <!-- all jQuary activation code here and always it will be bottom of all script tag -->
     <script src="js/main.js"></script>
+
+    <!-- email js -->
+    <script src="js/email.js"></script>
+
 </body>
 
 </html>
